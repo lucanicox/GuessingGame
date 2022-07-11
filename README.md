@@ -1,2 +1,2 @@
 # GuessingGame
-just a guessing game in C++
+Guess game in C++ to practice and help me improve my skills.
