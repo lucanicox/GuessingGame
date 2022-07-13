@@ -1,39 +1,6 @@
 #include <iostream>
 #include <ctime>
 
-int introArt()
-{
-    std::cout << R"(
-
- .-----------------------------.
-| # Hack Tool           TI-86 |
-| .-------------------------. |
-| |            ./           | |
-| |            +            | |
-| |. . . . . ./. . . . . . .| |
-| |          / .            | |
-| | X=5.2   /  .   Y=0      | |
-| '-------------------------' |
-| [Y=][WIN][ZOOM][TRACE][GRH] |
-|                  _ [ ^ ] _  |
-| [2nd][MODE][DEL]|_|     |_| |
-| [ALP][XTO][STAT]   [ V ]    |
-| [MATH][MAT][PGM][VARS][CLR] |
-| [x-1] [SIN] [COS] [TAN] [^] |
-|  [x2][ , ][ ( ][ ) ][ / ]   |
-| [LOG][ 7 ][ 8 ][ 9 ] [ X ]  |
-| [LN ][ 4 ][ 5 ][ 6 ] [ - ]  |
-| [STO>][ 1 ][ 2 ][ 3 ][ + ]  |
-| [ON][ 0 ][ . ][ (-) ][ENTR] |
-| ----                        |
-'-----------------------------'
-)"<< '\n';
-
-
-    return 0;
-}
-
-
 
 void printIntro(int Difficulty)
 {
@@ -95,7 +62,6 @@ int main ()
     srand(time(NULL)); // create new random sequence based on time of day
     int LevelDifficulty = 1;
     const int MaxDifficulty = 4;
-    introArt();
 
     while (LevelDifficulty <= MaxDifficulty) // Loop until all levels completed
     {
